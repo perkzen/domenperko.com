@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Cutive Mono', monospace;
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1;
 }
 
 a {
