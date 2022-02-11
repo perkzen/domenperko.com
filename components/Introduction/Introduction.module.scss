@@ -2,8 +2,13 @@
 @import "styles/theme";
 
 .Container {
-  @include d-flex-a-center-j-center;
-  flex-direction: row;
   height: 100vh;
+  max-height: 100vh;
   background-color: $background-color-1;
+
+  .Content {
+    @include d-flex-a-center-j-center;
+    flex-direction: column;
+    height: 80vh;
+  }
 }

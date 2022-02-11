@@ -3,3 +3,7 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin p-24 {
+  padding: 1.5rem;
+}
