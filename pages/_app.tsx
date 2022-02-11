@@ -4,7 +4,6 @@ import Head from 'next/head';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY);
   return (
     <>
       <Head>
@@ -23,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Domen Perko" />
         <meta content="Domen Perko | Software Developer" property="og:title" />
         <meta
-          content="Domen Perko software developer"
+          content="Hi my name is Domen. I'm a software developer from Slovenia. I love to work on interesting projects."
           property="og:description"
         />
       </Head>
@@ -37,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.GOOGLE_NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}', {
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}', {
               page_path: window.location.pathname,
             });
                 `}

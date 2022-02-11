@@ -1,0 +1,9 @@
+@import "styles/mixins";
+@import "styles/theme";
+
+.Container {
+  @include d-flex-a-center-j-center;
+  flex-direction: row;
+  height: 100vh;
+  background-color: $background-color-1;
+}
