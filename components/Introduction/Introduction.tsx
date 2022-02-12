@@ -3,7 +3,6 @@ import classes from './Introduction.module.scss';
 import { stringToArray } from '../../utils/converter';
 import AnimationCharacter from '../AnimationCharacter/AnimationCharacter';
 import { v4 } from 'uuid';
-import Navigation from '../Navigation/Navigation';
 
 const Introduction: FC = () => {
   const text = stringToArray('Hello_world!');
@@ -11,7 +10,6 @@ const Introduction: FC = () => {
   return (
     <>
       <div className={classes.Container}>
-        <Navigation />
         <div className={classes.Content}>
           <h1>
             {text.map((char) => (
