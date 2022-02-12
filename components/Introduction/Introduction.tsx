@@ -1,15 +1,23 @@
 import React, { FC } from 'react';
 import classes from './Introduction.module.scss';
-import { motion } from 'framer-motion';
+import { stringToArray } from '../../utils/converter';
+import AnimationCharacter from '../AnimationCharacter/AnimationCharacter';
+import { v4 } from 'uuid';
+import Navigation from '../Navigation/Navigation';
 
 const Introduction: FC = () => {
+  const text = stringToArray('Hello_world!');
+
   return (
     <>
       <div className={classes.Container}>
+        <Navigation />
         <div className={classes.Content}>
-          <motion.h1 animate={{ scale: 1.5 }} transition={{ duration: 0.5 }}>
-            Hello world!
-          </motion.h1>
+          <h1>
+            {text.map((char) => (
+              <AnimationCharacter char={char} key={v4()} />
+            ))}
+          </h1>
           <small>~ Domen Perko</small>
         </div>
       </div>

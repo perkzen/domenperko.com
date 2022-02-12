@@ -4,6 +4,12 @@
   justify-content: center;
 }
 
-@mixin p-24 {
-  padding: 1.5rem;
+@mixin d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin d-flex-col {
+  display: flex;
+  flex-direction: column;
 }

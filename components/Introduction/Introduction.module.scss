@@ -1,14 +1,19 @@
-@import "styles/mixins";
-@import "styles/theme";
+@import 'styles/mixins';
+@import 'styles/typography';
 
 .Container {
   height: 100vh;
   max-height: 100vh;
-  background-color: $background-color-1;
 
   .Content {
     @include d-flex-a-center-j-center;
     flex-direction: column;
     height: 80vh;
+
+    h1 {
+      @include d-flex-row;
+      @include heading;
+      letter-spacing: 0.2rem;
+    }
   }
 }
