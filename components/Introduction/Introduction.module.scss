@@ -2,18 +2,14 @@
 @import 'styles/typography';
 
 .Container {
-  height: 100vh;
   max-height: 100vh;
+  @include d-flex-a-center-j-center;
+  flex-direction: column;
+  height: 80vh;
 
-  .Content {
-    @include d-flex-a-center-j-center;
-    flex-direction: column;
-    height: 80vh;
-
-    h1 {
-      @include d-flex-row;
-      @include heading;
-      letter-spacing: 0.2rem;
-    }
+  h1 {
+    @include d-flex-row;
+    @include heading;
+    letter-spacing: 0.2rem;
   }
 }

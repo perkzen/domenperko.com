@@ -8,18 +8,14 @@ const Introduction: FC = () => {
   const text = stringToArray('Hello_world!');
 
   return (
-    <>
-      <div className={classes.Container}>
-        <div className={classes.Content}>
-          <h1>
-            {text.map((char) => (
-              <AnimationCharacter char={char} key={v4()} />
-            ))}
-          </h1>
-          <small>~ Domen Perko</small>
-        </div>
-      </div>
-    </>
+    <div className={classes.Container}>
+      <h1>
+        {text.map((char) => (
+          <AnimationCharacter char={char} key={v4()} />
+        ))}
+      </h1>
+      <small>~ Domen Perko</small>
+    </div>
   );
 };
 
