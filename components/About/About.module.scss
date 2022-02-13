@@ -1,9 +1,15 @@
 @import 'styles/typography';
+@import 'styles/mixins';
 
 .Container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include d-flex-col;
   min-height: 100vh;
+  gap: 6rem;
+
+  .Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   p {
     @include paragraph;

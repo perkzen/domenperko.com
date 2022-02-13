@@ -1,11 +1,18 @@
-import React, { FC } from 'react';
-import { motion, Transition, Variants } from 'framer-motion';
+import React, { FC, ReactNode } from 'react';
+import {
+  motion,
+  Variants,
+  Transition,
+  VariantLabels,
+  TargetAndTransition,
+} from 'framer-motion';
 
 interface AnimationCharacterProps {
-  char: string;
+  char: ReactNode;
   className?: string;
   variant?: Variants;
   transition?: Transition;
+  whileHover?: VariantLabels | TargetAndTransition;
 }
 
 const AnimationCharacter: FC<AnimationCharacterProps> = ({
@@ -13,9 +20,11 @@ const AnimationCharacter: FC<AnimationCharacterProps> = ({
   className,
   variant,
   transition,
+  whileHover,
 }) => {
   return (
     <motion.div
+      whileHover={whileHover}
       className={className}
       variants={variant}
       transition={transition}

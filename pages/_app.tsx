@@ -8,23 +8,30 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Domen Perko</title>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
         <link rel="icon" href="/pd.png" />
         <meta name="description" content="Portfolio website of Domen Perko." />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Domen Perko" />
         <meta name="title" content="Domen Perko" />
         <meta
           name="keywords"
-          content="domen,perko, Domen Perko, web developer, software developer, personal portfolio, portfolio, react, javascript, typescript, programming"
+          content="domen,perko, Domen Perko, web developer, 
+          software developer, personal portfolio, portfolio, react, javascript, typescript, programming, website"
         />
-        <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="English" />
-        <meta name="author" content="Domen Perko" />
         <meta content="Domen Perko | Software Developer" property="og:title" />
         <meta
-          content="Hi my name is Domen. I'm a software developer from Slovenia. I love to work on interesting projects."
+          content=" Hi, there I'm Domen. I'm a software developer from Slovenia.
+          I've started programming in 2020, since then I've build a
+          lot of interesting project, by building them I've added a lot of
+          new skills to my repertoire. The best thing I find amazing in software
+          developing is that you can make your life much easier by automating
+          boring tasks that you normally don't want to do."
           property="og:description"
         />
+        <meta property="og:image" content="/pd_square.png" />
       </Head>
       <Component {...pageProps} />
       <Script

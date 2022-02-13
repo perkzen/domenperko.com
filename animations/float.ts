@@ -9,6 +9,7 @@ export const floatVariant = {
 
 export const floatTransition = {
   duration: 1.5,
-  yoyo: Infinity,
+  repeat: Infinity,
+  repeatType: 'reverse',
   ease: 'easeInOut',
 };

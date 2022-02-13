@@ -1,5 +1,4 @@
 import React, { FC, ReactNode } from 'react';
-import Link from 'next/link';
 import classes from './SocialLink.module.scss';
 import { Links } from '../../constants/socials';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
@@ -28,7 +27,7 @@ const SocialLink: FC<SocialLinkProps> = ({ link }) => {
       whileHover={{ scale: 2, transition: { duration: 0.5 } }}
       className={classes.Container}
     >
-      <Link href={link}>{getIcon()}</Link>
+      <a href={link}>{getIcon()}</a>
     </motion.div>
   );
 };

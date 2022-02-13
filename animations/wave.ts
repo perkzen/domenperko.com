@@ -22,6 +22,7 @@ export const containerVariants = {
 
 export const charWaveTransition = {
   duration: 1.5,
-  yoyo: Infinity,
+  repeat: Infinity,
+  repeatType: 'reverse',
   ease: 'easeInOut',
 };
