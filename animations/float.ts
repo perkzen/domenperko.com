@@ -1,0 +1,14 @@
+export const floatVariant = {
+  start: {
+    y: '0%',
+  },
+  end: {
+    y: '50%',
+  },
+};
+
+export const floatTransition = {
+  duration: 1.5,
+  yoyo: Infinity,
+  ease: 'easeInOut',
+};

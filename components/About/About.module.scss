@@ -1,0 +1,15 @@
+@import 'styles/typography';
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+
+  p {
+    @include paragraph;
+  }
+
+  h1 {
+    @include heading;
+  }
+}
