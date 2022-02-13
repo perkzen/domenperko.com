@@ -22,11 +22,11 @@ const About: FC = () => {
           <p>
             Hi, there I&apos;m Domen. I&apos;m a software developer from
             Slovenia. I&apos;ve started programming in 2020, since then
-            I&apos;ve build a lot of interesting project, by building them
+            I&apos;ve built a lot of interesting project, by building them
             I&apos;ve added a lot of new skills to my repertoire. The best thing
-            I find amazing in software developing is that you can make your life
-            much easier by automating boring tasks that you normally don&apos;t
-            want to do.
+            I find in software developing is that you can make your life much
+            easier by automating boring tasks that you normally don&apos;t want
+            to do.
           </p>
         </motion.div>
       </div>
