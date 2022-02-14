@@ -61,7 +61,7 @@ export const technologies: ITechnology[] = [
   {
     icon: <SiReduxsaga />,
     url: 'https://redux-saga.js.org/',
-    name: 'Redux-saga',
+    name: 'Redux-Saga',
   },
   { icon: <SiSass />, url: 'https://sass-lang.com/', name: 'Sass' },
   {
