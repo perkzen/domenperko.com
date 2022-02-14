@@ -2,11 +2,12 @@
 
 .Container {
   @include d-flex-col;
+
   .Marquee {
-    border: 1px solid;
-    border-radius: 5px;
+    @include glass;
     font-size: 2.5rem;
     overflow-y: hidden;
+
     svg {
       margin: 2rem;
     }
