@@ -4,6 +4,7 @@
 .Container {
   @include d-flex-col;
   min-height: 100vh;
+  padding: 4rem 0;
 
   h1 {
     text-align: center;
@@ -15,6 +16,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }

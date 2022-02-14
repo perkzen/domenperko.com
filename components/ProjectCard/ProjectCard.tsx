@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import classes from './ProjectCard.module.scss';
 import { Project } from '../../constants/projects';
+import Tilt from 'react-tilt';
+import classNames from 'classnames';
 
 interface ProjectCardProps {
   project: Project;
@@ -8,10 +10,13 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className={classes.Container}>
-      <h1>{project.title}</h1>
+    <Tilt
+      className={classNames(classes.Container, 'Tilt')}
+      options={{ max: 25, scale: 1 }}
+    >
+      <h1 className={'Tilt-inner'}>{project.title}</h1>
       <p>{project.description}</p>
-    </div>
+    </Tilt>
   );
 };
 

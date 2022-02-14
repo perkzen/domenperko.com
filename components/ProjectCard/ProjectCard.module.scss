@@ -4,7 +4,7 @@
 .Container {
   @include d-flex-col;
   padding: 2rem;
-  height: 85%;
+  height: 90%;
   width: 50%;
   @include glass;
 
@@ -14,5 +14,26 @@
 
   p {
     @include typography-1;
+  }
+
+  .CircleWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 25px;
+
+    .Circle {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      top: -4.2em;
+      right: -10em;
+      z-index: -5;
+      background-color: #1e61e3;
+      border-radius: 50%;
+    }
   }
 }
