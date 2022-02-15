@@ -8,6 +8,8 @@ interface ProjectCardProps {
   project: Project;
 }
 
+// drag effect with framer motion add button show more
+
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   return (
     <Tilt
