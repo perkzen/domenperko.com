@@ -1,5 +1,3 @@
-import nChainLogo from '../assets/nChain.jpeg';
-
 export enum ExperienceType {
   UNI = 'university',
   COMPANY = 'company',
@@ -14,7 +12,6 @@ export interface Experience {
   startDate: string;
   endDate: string;
   type: ExperienceType;
-  img: any;
 }
 
 export const experiences: Experience[] = [
@@ -28,7 +25,6 @@ export const experiences: Experience[] = [
     startDate: 'Oct 2020',
     endDate: 'Present',
     type: ExperienceType.UNI,
-    img: 'https://feri.um.si/wp-content/uploads/2019/12/logo-feri.png',
   },
   {
     title: 'Junior Software Engineer',
@@ -41,7 +37,6 @@ export const experiences: Experience[] = [
     startDate: 'Nov 2021',
     endDate: 'May 2022',
     type: ExperienceType.COMPANY,
-    img: 'https://equaleyes.com/wp-content/uploads/2019/12/logo-equaleyes.png',
   },
   {
     title: 'Junior Software Engineer',
@@ -54,6 +49,5 @@ export const experiences: Experience[] = [
     startDate: 'May 2022',
     endDate: 'Present',
     type: ExperienceType.COMPANY,
-    img: nChainLogo,
   },
 ];
