@@ -35,7 +35,7 @@ export const experiences: Experience[] = [
     company: 'Equaleyes Ltd.',
     url: 'https://equaleyes.com/',
     description:
-      'I worked as a Junior Software Engineer at Equaleyes.' +
+      'I worked as a Junior Software Engineer at Equaleyes. ' +
       'Mainly I worked on the frontend side where I learnt a lot about TypeScript, React, Redux and SCSS.' +
       'I also worked a little on the backend using Typescript, NestJS, Swagger and PostgreSQL.',
     startDate: 'Nov 2021',
