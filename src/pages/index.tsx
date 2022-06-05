@@ -7,6 +7,7 @@ import { tsParticles } from 'tsparticles-engine';
 import Particles from 'react-tsparticles';
 import { options } from '../animations/particles';
 import React from 'react';
+import { Timeline } from '../components/Timeline/Timeline';
 
 const Home: NextPage = () => {
   const particlesInit = async () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <LayoutProvider>
         <Introduction />
         <About />
+        <Timeline />
       </LayoutProvider>
     </>
   );

@@ -1,0 +1,32 @@
+@import '../../styles/typography';
+@import '../../styles/mixins';
+
+.Container {
+  @include d-flex-col;
+  width: 100%;
+
+  .Image {
+    border-radius: 50px;
+  }
+
+  .Title {
+    @include d-flex-row;
+    align-items: center;
+    @include typography-1;
+    gap: 2rem;
+
+    .Icon {
+      @include glass;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      padding: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+  .Description {
+    width: 80%;
+    padding-left: 6rem;
+  }
+}

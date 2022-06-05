@@ -1,0 +1,14 @@
+@import '../../styles/typography';
+@import '../../styles/mixins';
+
+.Container {
+  @include d-flex-col;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .Title {
+    @include heading;
+    text-align: center;
+  }
+}

@@ -20,6 +20,8 @@ import {
   SiGo,
   SiPostgresql,
   SiSolidity,
+  SiGit,
+  SiDocker,
 } from 'react-icons/si';
 import React, { ReactNode } from 'react';
 
@@ -83,4 +85,6 @@ export const technologies: ITechnology[] = [
     url: 'https://docs.soliditylang.org/',
     name: 'Solidity',
   },
+  { icon: <SiGit />, url: 'https://git-scm.com/', name: 'Git' },
+  { icon: <SiDocker />, url: 'https://www.docker.com/', name: 'Docker' },
 ];
