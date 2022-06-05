@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
     company: 'University of Maribor',
     url: 'https://feri.um.si/',
     description:
-      "I'm a student of the Faculty of Electrical Engineering and Computer Science, University of Maribor, " +
+      'Student at the Faculty of Electrical Engineering and Computer Science, University of Maribor, ' +
       'studying Informatics and communication technologies.',
     startDate: 'Oct 2020',
     endDate: 'Present',
@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
     url: 'https://equaleyes.com/',
     description:
       'I worked as a Junior Software Engineer at Equaleyes.' +
-      'Mainly I worked on the frontend side of the application where I learnt a lot about TypeScript, React, Redux and SCSS.' +
+      'Mainly I worked on the frontend side where I learnt a lot about TypeScript, React, Redux and SCSS.' +
       'I also worked a little on the backend using Typescript, NestJS, Swagger and PostgreSQL.',
     startDate: 'Nov 2021',
     endDate: 'May 2022',
@@ -48,8 +48,9 @@ export const experiences: Experience[] = [
     company: 'nChain d.o.o.',
     url: 'https://nchain.com/',
     description:
-      "I'm working as a Junior Software Engineer at nChain. Currently working on the backend where I'm working on different " +
-      'microservices using Typescript, Express.js, Swagger, GraphQL, PostgreSQL.',
+      "Currently working as a Junior Software Engineer at nChain. Mainly working on the backend where I'm contributing to different " +
+      'microservices. Some technologies that I daily use at my work are Typescript, Express.js, Swagger, GraphQL and PostgreSQL. ' +
+      'The most important things that I learnt at this position is writing good unit tests',
     startDate: 'May 2022',
     endDate: 'Present',
     type: ExperienceType.COMPANY,
