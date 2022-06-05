@@ -21,7 +21,6 @@ const Introduction: FC = () => {
             char={char}
             key={v4()}
             variant={charWaveVariant}
-            // @ts-ignore
             transition={charWaveTransition}
           />
         ))}

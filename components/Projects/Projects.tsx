@@ -16,11 +16,11 @@ const Projects: FC = () => {
       >
         Projects
       </motion.h1>
-      <div className={classes.Content}>
-        {projects.map((project) => (
-          <ProjectCard project={project} key={v4()} />
-        ))}
-      </div>
+      {/*<div className={classes.Content}>*/}
+      {/*  {projects.map((project) => (*/}
+      {/*    <ProjectCard project={project} key={v4()} />*/}
+      {/*  ))}*/}
+      {/*</div>*/}
     </motion.div>
   );
 };

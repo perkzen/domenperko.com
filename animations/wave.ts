@@ -1,3 +1,5 @@
+import { Transition } from 'framer-motion';
+
 export const charWaveVariant = {
   start: {
     y: '0%',
@@ -20,7 +22,7 @@ export const containerVariants = {
   },
 };
 
-export const charWaveTransition = {
+export const charWaveTransition: Transition = {
   duration: 1.5,
   repeat: Infinity,
   repeatType: 'reverse',

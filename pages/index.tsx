@@ -2,8 +2,6 @@ import type { NextPage } from 'next';
 import Introduction from '../components/Introduction/Introduction';
 import LayoutProvider from '../components/LayoutProvider/LayoutProvider';
 import About from '../components/About/About';
-import Projects from '../components/Projects/Projects';
-import Footer from '../components/Footer/Footer';
 
 const Home: NextPage = () => {
   // TODO add footer
@@ -12,7 +10,6 @@ const Home: NextPage = () => {
     <LayoutProvider>
       <Introduction />
       <About />
-      <Projects />
     </LayoutProvider>
   );
 };
