@@ -5,8 +5,6 @@ import { floatTransition, floatVariant } from '../../animations/float';
 import Technologies from '../Techonologies/Technologies';
 
 const About: FC = () => {
-  // TODO Add some kind of image
-
   return (
     <div className={classes.Container}>
       <div className={classes.Grid}>
