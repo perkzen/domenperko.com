@@ -4,11 +4,13 @@
 .Container {
   @include d-flex-a-center-j-center;
   flex-direction: column;
-  min-height: 100vh;
-  margin-top: 4rem;
+  padding: 2rem;
 
-  .Title {
-    @include heading;
-    text-align: center;
+  h1 {
+    @include title;
+  }
+
+  p {
+    @include paragraph;
   }
 }

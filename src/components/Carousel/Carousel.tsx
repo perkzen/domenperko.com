@@ -9,6 +9,7 @@ import {
 } from '../../animations/slide';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import { projects } from '../../constants/projects';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 export const Carousel: FC = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -45,7 +46,7 @@ export const Carousel: FC = () => {
             }
           }}
         >
-          {projects[index].title}
+          <ProjectCard project={projects[index]} />
         </motion.div>
       </AnimatePresence>
       <div className={classes.Buttons}>
