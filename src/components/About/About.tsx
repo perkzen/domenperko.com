@@ -10,7 +10,7 @@ const About: FC = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.Grid}>
-        <Image src={image} alt={'image'} />
+        <Image src={image} alt={'image'} priority />
         <motion.div initial="start" animate="end">
           <motion.h1 variants={floatVariant} transition={floatTransition}>
             About me
