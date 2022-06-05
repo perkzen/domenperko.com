@@ -2,9 +2,6 @@ import React, { FC } from 'react';
 import classes from './Projects.module.scss';
 import { motion } from 'framer-motion';
 import { floatTransition, floatVariant } from '../../animations/float';
-import { projects } from '../../constants/projects';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import { v4 } from 'uuid';
 
 const Projects: FC = () => {
   return (
