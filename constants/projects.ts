@@ -1,4 +1,4 @@
-// messenger app, discord crypto bot, web scraper, computer shop
+// messenger app, discord crypto bot, computer shop, reservation app
 
 export interface Project {
   title: string;
