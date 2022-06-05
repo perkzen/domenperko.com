@@ -72,11 +72,15 @@ export const technologies: ITechnology[] = [
     url: 'https://www.framer.com/motion/',
     name: 'Framer-Motion',
   },
-  { icon: <SiGo />, url: 'https://golang.org/', name: 'Go' },
+  { icon: <SiGo />, url: 'https://go.dev/', name: 'Go' },
   {
     icon: <SiPostgresql />,
     url: 'https://www.postgresql.org/',
     name: 'PostgreSQL',
   },
-  { icon: <SiSolidity />, url: 'https://solidity.org/', name: 'Solidity' },
+  {
+    icon: <SiSolidity />,
+    url: 'https://docs.soliditylang.org/',
+    name: 'Solidity',
+  },
 ];
