@@ -3,12 +3,14 @@ import classes from './About.module.scss';
 import { motion } from 'framer-motion';
 import { floatTransition, floatVariant } from '../../animations/float';
 import Technologies from '../Techonologies/Technologies';
+import Image from 'next/image';
+import image from '../../assets/undraw_feeling_proud_qne1.svg';
 
 const About: FC = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.Grid}>
-        <div />
+        <Image src={image} alt={'image'} />
         <motion.div initial="start" animate="end">
           <motion.h1 variants={floatVariant} transition={floatTransition}>
             About me
