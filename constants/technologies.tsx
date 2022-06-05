@@ -19,6 +19,7 @@ import {
   SiFramer,
   SiGo,
   SiPostgresql,
+  SiSolidity,
 } from 'react-icons/si';
 import React, { ReactNode } from 'react';
 
@@ -77,4 +78,5 @@ export const technologies: ITechnology[] = [
     url: 'https://www.postgresql.org/',
     name: 'PostgreSQL',
   },
+  { icon: <SiSolidity />, url: 'https://solidity.org/', name: 'Solidity' },
 ];
