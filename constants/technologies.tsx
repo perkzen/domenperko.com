@@ -17,6 +17,8 @@ import {
   SiReduxsaga,
   SiSass,
   SiFramer,
+  SiGo,
+  SiPostgresql,
 } from 'react-icons/si';
 import React, { ReactNode } from 'react';
 
@@ -68,5 +70,11 @@ export const technologies: ITechnology[] = [
     icon: <SiFramer />,
     url: 'https://www.framer.com/motion/',
     name: 'Framer-Motion',
+  },
+  { icon: <SiGo />, url: 'https://golang.org/', name: 'Go' },
+  {
+    icon: <SiPostgresql />,
+    url: 'https://www.postgresql.org/',
+    name: 'PostgreSQL',
   },
 ];
