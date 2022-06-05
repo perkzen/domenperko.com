@@ -2,20 +2,11 @@
 @import '../../styles/mixins';
 
 .Container {
-  @include d-flex-col;
+  @include d-flex-a-center-j-center;
+  flex-direction: column;
   min-height: 100vh;
-  padding: 4rem 0;
 
-  h1 {
-    text-align: center;
+  .Title {
     @include heading;
-    margin: 4rem 0;
-  }
-
-  .Content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 2.5rem;
   }
 }

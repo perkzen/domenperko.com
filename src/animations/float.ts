@@ -1,6 +1,6 @@
-import { Transition } from 'framer-motion';
+import { Transition, Variants } from 'framer-motion';
 
-export const floatVariant = {
+export const floatVariant: Variants = {
   start: {
     y: '0%',
   },

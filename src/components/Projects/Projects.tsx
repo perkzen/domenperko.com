@@ -1,23 +1,28 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import classes from './Projects.module.scss';
 import { motion } from 'framer-motion';
 import { floatTransition, floatVariant } from '../../animations/float';
+import { Carousel } from '../Carousel/Carousel';
 
 const Projects: FC = () => {
+  const [showProjects, setShowProjects] = useState(false);
+
+  useEffect(() => {
+    setShowProjects(true);
+  }, []);
+
+  if (!showProjects) return null;
+
   return (
     <motion.div initial="start" animate="end" className={classes.Container}>
       <motion.h1
         variants={floatVariant}
-        // @ts-ignore
         transition={floatTransition}
+        className={classes.Title}
       >
         Projects
       </motion.h1>
-      {/*<div className={classes.Content}>*/}
-      {/*  {projects.map((project) => (*/}
-      {/*    <ProjectCard project={project} key={v4()} />*/}
-      {/*  ))}*/}
-      {/*</div>*/}
+      <Carousel />
     </motion.div>
   );
 };

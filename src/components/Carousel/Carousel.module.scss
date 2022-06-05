@@ -1,0 +1,43 @@
+@import '../../styles/mixins';
+
+.Container {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Next,
+  .Prev {
+    top: calc(50% - 20px);
+    position: absolute;
+    @include glass;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 2;
+  }
+
+  .Next {
+    right: 10px;
+  }
+
+  .Prev {
+    left: 10px;
+  }
+
+  .Project {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    @include glass;
+  }
+}

@@ -1,6 +1,6 @@
-import { Transition } from 'framer-motion';
+import { Transition, Variants } from 'framer-motion';
 
-export const charWaveVariant = {
+export const charWaveVariant: Variants = {
   start: {
     y: '0%',
   },
@@ -9,7 +9,7 @@ export const charWaveVariant = {
   },
 };
 
-export const containerVariants = {
+export const containerVariants: Variants = {
   start: {
     transition: {
       staggerChildren: 0.2,
