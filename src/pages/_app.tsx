@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Domen Perko</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-        <link rel="icon" href="/public/pd.png" />
+        <link rel="icon" href="/pd.png" />
         <meta name="description" content="Portfolio website of Domen Perko." />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="robots" content="index, follow" />
