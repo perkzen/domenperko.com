@@ -1,4 +1,7 @@
+@import '../../styles/typography';
+
 .Container {
   display: flex;
   justify-content: center;
+  @include typography-1;
 }
