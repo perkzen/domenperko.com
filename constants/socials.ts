@@ -9,5 +9,3 @@ export const SocialsLinks: Links[] = [
   Links.LINKEDIN,
   Links.INSTAGRAM,
 ];
-
-// create a gmail for business domen@contact.com

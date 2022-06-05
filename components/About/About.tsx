@@ -10,11 +10,7 @@ const About: FC = () => {
       <div className={classes.Grid}>
         <div />
         <motion.div initial="start" animate="end">
-          <motion.h1
-            variants={floatVariant}
-            // @ts-ignore
-            transition={floatTransition}
-          >
+          <motion.h1 variants={floatVariant} transition={floatTransition}>
             About me
           </motion.h1>
           <p>

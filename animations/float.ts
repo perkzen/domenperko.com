@@ -1,3 +1,5 @@
+import { Transition } from 'framer-motion';
+
 export const floatVariant = {
   start: {
     y: '0%',
@@ -7,7 +9,7 @@ export const floatVariant = {
   },
 };
 
-export const floatTransition = {
+export const floatTransition: Transition = {
   duration: 1.5,
   repeat: Infinity,
   repeatType: 'reverse',

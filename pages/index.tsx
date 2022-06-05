@@ -12,6 +12,7 @@ const Home: NextPage = () => {
   const particlesInit = async () => {
     await loadFull(tsParticles);
   };
+
   return (
     <>
       <Particles init={particlesInit} options={options} />
