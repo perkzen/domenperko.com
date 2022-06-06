@@ -46,7 +46,7 @@ export const experiences: Experience[] = [
     description:
       "Currently working as a Junior Software Engineer at nChain. Mainly working on the backend where I'm contributing to different " +
       'microservices. Some technologies that I daily use at my work are Typescript, Express.js, Swagger, GraphQL and PostgreSQL. ' +
-      'The most important things that I learnt so far at this position is how to write good unit tests of my code.',
+      'The most important things that I learnt so far at this position is how to write good unit tests for my code.',
     startDate: 'May 2022',
     endDate: 'Present',
     type: ExperienceType.COMPANY,
