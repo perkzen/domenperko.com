@@ -21,7 +21,7 @@ const About: FC = () => {
             a lot of interesting projects, by building them I have added a lot
             of new skills to my repertoire. I have been obsessed with the idea
             of using software to solve practical problems. Software engineering
-            is a neverending puzzle that I am passionately engaged in solving.
+            is a never ending puzzle that I am passionately engaged in solving.
           </p>
         </motion.div>
       </div>
