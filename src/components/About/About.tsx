@@ -17,12 +17,11 @@ const About: FC = () => {
           </motion.h1>
           <p>
             Hi, there I&apos;m Domen. I&apos;m a software developer from
-            Slovenia. I&apos;ve started programming in 2020, since then
-            I&apos;ve built a lot of interesting project, by building them
-            I&apos;ve added a lot of new skills to my repertoire. The best thing
-            I find in software developing is that you can make your life much
-            easier by automating boring tasks that you normally don&apos;t want
-            to do.
+            Slovenia. I started programming in 2020, and since then I have built
+            a lot of interesting projects, by building them I have added a lot
+            of new skills to my repertoire. I have been obsessed with the idea
+            of using software to solve practical problems. Software engineering
+            is a neverending puzzle that I am passionately engaged in solving.
           </p>
         </motion.div>
       </div>
