@@ -1,5 +1,11 @@
+@import '../../styles/mixins';
+
 .Container {
   max-width: 1280px;
   width: 100%;
   margin: auto;
+  main {
+    @include d-flex-col;
+    gap: 1.5rem;
+  }
 }

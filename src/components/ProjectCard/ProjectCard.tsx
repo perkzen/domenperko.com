@@ -9,7 +9,14 @@ interface ProjectCardProps {
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className={classes.Container}>
-      <h1>{project.title}</h1>
+      <div className={classes.Header}>
+        <div className={classes.Buttons}>
+          <div />
+          <div />
+          <div />
+        </div>
+        <div className={classes.Title}>{project.title}</div>
+      </div>
       <p>{project.description}</p>
     </div>
   );
