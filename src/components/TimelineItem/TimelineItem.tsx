@@ -22,11 +22,13 @@ const TimelineItem: FC<TimelineItemProps> = ({ experience }) => {
         <h1>
           {experience.title}, {experience.company}{' '}
         </h1>
-        <div>
-          {experience.startDate} - {experience.endDate}
-        </div>
       </div>
-      <p className={classes.Description}>{experience.description}</p>
+      <div className={classes.Description}>
+        <p className={classes.Time}>
+          {experience.startDate} - {experience.endDate}
+        </p>
+        <p>{experience.description}</p>
+      </div>
     </div>
   );
 };

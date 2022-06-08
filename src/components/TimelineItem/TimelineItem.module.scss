@@ -12,12 +12,12 @@
   .Title {
     @include d-flex-col;
     align-items: center;
+    gap: 1rem;
 
     @media (min-width: 768px) {
       @include d-flex-row;
       align-items: center;
       @include typography-1;
-      gap: 2rem;
     }
 
     .Icon {
@@ -35,6 +35,10 @@
   }
 
   .Description {
+    .Time {
+      font-weight: bold;
+    }
+
     word-break: normal;
     @media (min-width: 768px) {
       width: 80%;
