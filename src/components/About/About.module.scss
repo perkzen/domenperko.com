@@ -8,8 +8,14 @@
 
   .Grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 2rem;
+
+    @media (min-width: 640px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
   }
 
   p {
@@ -17,6 +23,9 @@
   }
 
   h1 {
-    @include heading;
+    @include mobile-heading;
+    @media (min-width: 640px) {
+      @include heading;
+    }
   }
 }

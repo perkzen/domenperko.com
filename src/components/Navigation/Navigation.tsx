@@ -9,9 +9,7 @@ import { v4 } from 'uuid';
 const Navigation: FC = () => {
   return (
     <div className={classes.Container}>
-      <div className={classes.Logo}>
-        <Image src={LOGO} width={75} height={75} alt={'Website Logo'} />
-      </div>
+      <Image src={LOGO} width={75} height={75} alt={'Website Logo'} />
       <div className={classes.Socials}>
         {SocialsLinks.map((socialLink) => (
           <SocialLink link={socialLink} key={v4()} />

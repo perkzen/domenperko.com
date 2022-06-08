@@ -6,6 +6,11 @@
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 
   .Title {
     @include heading;

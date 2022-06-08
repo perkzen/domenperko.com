@@ -9,7 +9,10 @@
 
   h1 {
     @include d-flex-row;
-    @include heading;
+    @include mobile-heading;
+    @media (min-width: 640px) {
+      @include heading;
+    }
     letter-spacing: 0.2rem;
   }
 }

@@ -2,6 +2,10 @@
   font-size: 4rem;
 }
 
+@mixin mobile-heading {
+  font-size: 3rem;
+}
+
 @mixin paragraph {
   line-height: 1.5;
   font-size: 1.5rem;

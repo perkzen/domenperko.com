@@ -2,6 +2,11 @@
 
 .Container {
   @include d-flex-col;
+  padding: 1rem;
+
+  @media (min-width: 640px) {
+    padding: 0;
+  }
 
   .Marquee {
     @include glass;
