@@ -4,7 +4,7 @@
 .Container {
   @include d-flex-col;
   min-height: 100vh;
-  gap: 6rem;
+  gap: 2rem;
 
   .Grid {
     display: grid;

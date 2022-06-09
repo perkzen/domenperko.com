@@ -3,18 +3,24 @@
 .Container {
   @include d-flex-col;
   padding: 1rem;
-
   @media (min-width: 640px) {
     padding: 0;
   }
 
   .Marquee {
     @include glass;
-    font-size: 2.5rem;
+    font-size: 2rem;
     overflow-y: hidden;
 
+    @media (min-width: 640px) {
+      font-size: 2.5rem;
+    }
+
     svg {
-      margin: 2rem;
+      margin: 1rem;
+      @media (min-width: 640px) {
+        margin: 2rem;
+      }
     }
   }
 }

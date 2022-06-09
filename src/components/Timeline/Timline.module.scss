@@ -13,7 +13,10 @@
   }
 
   .Title {
-    @include heading;
+    @include mobile-heading;
+    @media (min-width: 768px) {
+      @include heading;
+    }
     text-align: center;
   }
 }
