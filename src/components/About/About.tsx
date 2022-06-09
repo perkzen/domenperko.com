@@ -15,7 +15,11 @@ const About: FC = () => {
     if (inView) {
       animation.start({
         x: 0,
-        transition: { duration: 2, type: 'spring', bounce: 0.2 },
+        transition: {
+          type: 'spring',
+          bounce: 0.2,
+          duration: 2.5,
+        },
       });
     }
   }, [animation, inView]);
