@@ -7,11 +7,33 @@ import { floatTransition, floatVariant } from '../../animations/float';
 import { useInView } from 'react-intersection-observer';
 
 const variants = {
-  open: {
-    transition: { staggerChildren: 0.2, delayChildren: 0.2 },
+  hidden: {
+    opacity: 0,
   },
-  closed: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      when: 'beforeChildren',
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const childVariants = {
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  hidden: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
   },
 };
 
@@ -21,8 +43,10 @@ export const Timeline: FC = () => {
 
   useEffect(() => {
     if (inView) {
-      console.log('d');
-      animation.start('open');
+      animation.start('visible');
+    }
+    if (!inView) {
+      animation.start('hidden');
     }
   }, [animation, inView]);
 
@@ -36,13 +60,13 @@ export const Timeline: FC = () => {
       >
         Timeline
       </motion.h1>
-      <motion.nav initial={false} animate={animation}>
-        <motion.ul variants={variants}>
-          {experiences.map((experience, index) => (
-            <TimelineItem key={index} experience={experience} />
-          ))}
-        </motion.ul>
-      </motion.nav>
+      <motion.ul variants={variants} initial={'hidden'} animate={animation}>
+        {experiences.map((experience, index) => (
+          <motion.li variants={childVariants} key={index}>
+            <TimelineItem experience={experience} />
+          </motion.li>
+        ))}
+      </motion.ul>
     </motion.div>
   );
 };

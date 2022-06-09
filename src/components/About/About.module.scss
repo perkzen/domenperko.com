@@ -9,7 +9,7 @@
   .Grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
 
     @media (min-width: 640px) {
