@@ -38,7 +38,7 @@ const childVariants = {
 };
 
 export const Timeline: FC = () => {
-  const [ref, inView] = useInView({ threshold: 0.3 });
+  const [ref, inView] = useInView();
   const animation = useAnimation();
 
   useEffect(() => {
