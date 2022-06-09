@@ -25,6 +25,7 @@ const childVariants = {
     y: 0,
     opacity: 1,
     transition: {
+      duration: 1,
       y: { stiffness: 1000, velocity: -100 },
     },
   },
