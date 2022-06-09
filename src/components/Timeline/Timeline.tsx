@@ -15,7 +15,7 @@ const variants = {
     transition: {
       type: 'spring',
       when: 'beforeChildren',
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -38,7 +38,7 @@ const childVariants = {
 };
 
 export const Timeline: FC = () => {
-  const [ref, inView] = useInView({ threshold: 1 });
+  const [ref, inView] = useInView({ threshold: 0.3 });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -56,11 +56,15 @@ export const Timeline: FC = () => {
         variants={floatVariant}
         transition={floatTransition}
         className={classes.Title}
-        ref={ref}
       >
         Timeline
       </motion.h1>
-      <motion.ul variants={variants} initial={'hidden'} animate={animation}>
+      <motion.ul
+        variants={variants}
+        initial={'hidden'}
+        animate={animation}
+        ref={ref}
+      >
         {experiences.map((experience, index) => (
           <motion.li variants={childVariants} key={index}>
             <TimelineItem experience={experience} />
