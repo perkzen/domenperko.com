@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { floatTransition, floatVariant } from '../../animations/float';
 import Technologies from '../Techonologies/Technologies';
 import Image from 'next/image';
-import image from '../../assets/undraw_feeling_proud_qne1.svg';
+import image from '../../../public/pd_square.png';
 import { useInView } from 'react-intersection-observer';
 
 const About: FC = () => {
@@ -28,7 +28,14 @@ const About: FC = () => {
     <div className={classes.Container}>
       <div className={classes.Grid}>
         <div ref={ref}>
-          <Image src={image} alt={'image'} priority />
+          <Image
+            src={image}
+            alt={'image'}
+            width={200}
+            height={200}
+            style={{ filter: 'grayscale(70%)' }}
+            priority
+          />
         </div>
         <motion.div initial={{ x: '200vw' }} animate={animation}>
           <motion.div initial="start" animate="end">

@@ -9,6 +9,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   line-height: 1;
   background-color: $background-color-1;
+  color: $color-white-1;
 }
 
 a {
@@ -19,4 +20,20 @@ a {
 .overlay::after,
 .overlay::before {
   display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-white-2;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-white-1;
 }
