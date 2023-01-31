@@ -1,3 +1,5 @@
+@import '../styles/theme';
+
 @mixin d-flex-a-center-j-center {
   display: flex;
   align-items: center;
@@ -21,4 +23,8 @@
   -webkit-backdrop-filter: blur(4px);
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@mixin border {
+  border: 1px solid $color-white-2;
 }

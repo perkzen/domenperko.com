@@ -4,9 +4,8 @@
 
 .Container {
   @include d-flex-col;
-  border: 1px solid $color-white-2;
+  @include border;
   padding: 2rem;
-  border-radius: 10px;
 
   h1 {
     z-index: 100;
