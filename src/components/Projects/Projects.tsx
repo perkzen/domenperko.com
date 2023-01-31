@@ -2,7 +2,8 @@ import React, { FC, useEffect, useState } from 'react';
 import classes from './Projects.module.scss';
 import { motion } from 'framer-motion';
 import { floatTransition, floatVariant } from '../../animations/float';
-import { Carousel } from '../Carousel/Carousel';
+import { projects } from '../../constants/projects';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 const Projects: FC = () => {
   const [showProjects, setShowProjects] = useState(false);
@@ -22,7 +23,11 @@ const Projects: FC = () => {
       >
         Projects
       </motion.h1>
-      <Carousel />
+      <div className={classes.Projects}>
+        {projects.map((project, index) => (
+          <ProjectCard project={project} key={index} />
+        ))}
+      </div>
     </motion.div>
   );
 };

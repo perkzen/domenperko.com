@@ -1,64 +1,52 @@
 @import '../../styles/typography';
 @import '../../styles/mixins';
+@import '../../styles/theme';
 
 .Container {
-  @include d-flex-a-center-j-center;
-  flex-direction: column;
-  color: #adadad;
+  @include d-flex-col;
+  border: 1px solid $color-white-2;
+  padding: 2rem;
+  border-radius: 10px;
 
-  .Header {
-    @include d-flex-row;
-    position: relative;
-    background: #3a363e;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    width: 100%;
-    margin: 0;
-
-    .Buttons {
+  h1 {
+    z-index: 100;
+    a {
       @include d-flex-row;
-      gap: 1rem;
-      margin-left: 1rem;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-
-      div:first-child {
-        border-radius: 50%;
-        background: #f65f57;
-        width: 15px;
-        height: 15px;
-      }
-
-      div:nth-child(2) {
-        border-radius: 50%;
-        background: #fabc2f;
-        width: 15px;
-        height: 15px;
-      }
-
-      div:nth-child(3) {
-        border-radius: 50%;
-        background: #44c840;
-        width: 15px;
-        height: 15px;
-      }
+      gap: 2rem;
     }
-
-    .Title {
-      // center item in row
-      margin-left: 1rem;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      position: absolute;
-      width: 100%;
-      @include d-flex-row;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-    }
+    @include title;
   }
 
   p {
-    @include paragraph;
+    @include typography-2;
+    display: flex;
+    flex-grow: 1;
+  }
+  .Language {
+    @include d-flex-row;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  }
+
+  .Tags {
+    @include d-flex-row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    .Tag {
+      @include d-flex-a-center-j-center;
+      max-width: min-content;
+      background: $accent-color-1;
+      min-width: 75px;
+      border-radius: 25px;
+      color: white;
+      @include typography-small;
+    }
   }
 }
