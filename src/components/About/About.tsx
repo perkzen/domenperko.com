@@ -28,14 +28,7 @@ const About: FC = () => {
     <div className={classes.Container}>
       <div className={classes.Grid}>
         <div ref={ref}>
-          <Image
-            src={image}
-            alt={'image'}
-            width={200}
-            height={200}
-            style={{ filter: 'grayscale(70%)' }}
-            priority
-          />
+          <Image src={image} alt={'image'} width={200} height={200} priority />
         </div>
         <motion.div initial={{ x: '200vw' }} animate={animation}>
           <motion.div initial="start" animate="end">

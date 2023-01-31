@@ -9,6 +9,8 @@ import { options } from '../animations/particles';
 import React from 'react';
 import { Timeline } from '../components/Timeline/Timeline';
 
+import Projects from '../components/Projects/Projects';
+
 const Home: NextPage = () => {
   const particlesInit = async () => {
     await loadFull(tsParticles);
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
       <LayoutProvider>
         <Introduction />
         <About />
-        {/*<Projects />*/}
+        <Projects />
         <Timeline />
       </LayoutProvider>
     </>

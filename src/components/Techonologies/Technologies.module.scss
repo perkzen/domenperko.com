@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/theme';
 
 .Container {
   @include d-flex-col;
@@ -8,7 +9,8 @@
   }
 
   .Marquee {
-    @include glass;
+    // @include glass;
+    @include border;
     font-size: 2rem;
     overflow-y: hidden;
 

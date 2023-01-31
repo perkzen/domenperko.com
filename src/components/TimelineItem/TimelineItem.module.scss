@@ -1,5 +1,6 @@
 @import '../../styles/typography';
 @import '../../styles/mixins';
+@import '../../styles/theme';
 
 .Container {
   @include d-flex-col;
@@ -21,7 +22,8 @@
     }
 
     .Icon {
-      @include glass;
+      //@include glass;
+      @include border;
       border-radius: 50%;
       width: 2rem;
       height: 2rem;

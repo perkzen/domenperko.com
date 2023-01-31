@@ -11,4 +11,17 @@
     @include heading;
     text-align: center;
   }
+
+  .Projects {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+    }
+
+    @include d-flex-col;
+    width: 80%;
+    gap: 4rem;
+    margin-top: 4rem;
+  }
 }

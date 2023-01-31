@@ -1,3 +1,5 @@
+@import '../styles/theme';
+
 @mixin d-flex-a-center-j-center {
   display: flex;
   align-items: center;
@@ -15,30 +17,14 @@
 }
 
 @mixin glass {
-  //glass 1
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(40, 43, 55, 0.71);
+  box-shadow: 0 8px 32px 0 rgba(40, 42, 53, 0.71);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  // 15px before change
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
-  //glass 2
-  //background: rgba(255, 255, 255, 0.2);
-  //border-radius: 16px;
-  //box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  //backdrop-filter: blur(5px);
-  //-webkit-backdrop-filter: blur(5px);
-  //border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@mixin glass-btn {
-  /* From https://css.glass */
-  background: rgba(211, 227, 240, 0.6);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(211, 227, 240, 0.81);
+@mixin border {
+  border: 1px solid $color-white-2;
 }
