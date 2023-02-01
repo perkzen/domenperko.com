@@ -19,6 +19,22 @@
     }
   }
 
+  .ImageContainer {
+    @include d-flex-a-center-j-center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    > div {
+      @include typography-1;
+    }
+
+    > span {
+      @include d-flex-row;
+      gap: 1rem;
+      @include title;
+    }
+  }
+
   p {
     @include paragraph;
   }

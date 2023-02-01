@@ -26,7 +26,6 @@ export const projects: Project[] = [
     technologies: [
       'Tailwindcss',
       'NextJS',
-      'React',
       'Redux',
       'Express',
       'MongoDB',
@@ -45,23 +44,22 @@ export const projects: Project[] = [
     technologies: ['React', 'Redux', 'Tailwindcss'],
   },
   {
-    title: 'Discord Crypto Bot',
+    title: 'Endava workspace reservation',
     description:
-      'I made this bot, so I could get stats about a specific cryptocurrency fast without needing to search the web. ' +
-      'When I write the command to fetch data about the specific cryptocurrency that I want, ' +
-      'the Bot scrapes a crypto exchange a retrieves the latest data about the coin.',
-    url: '',
-    color: '#3572A5',
-    languages: 'Python',
-    technologies: ['Python', 'Discord'],
+      'This is a workspace reservation web application for company Endava. ' +
+      'Where you can dynamically choose your workspace or reserve it for a few days in advance. ',
+    url: 'https://github.com/perkzen/reservation-system-endava',
+    languages: 'Typescript',
+    color: '#3178C6',
+    technologies: ['React', 'Redux', 'Tailwindcss', 'NestJS', 'MongoDB'],
   },
   {
     title: 'Finazo',
     description:
-      'Finazo is a web application that I build to manage my finances and also to visualize my income and expenses. ',
+      'Finazo is a web application where you can manage your finances. Finanzo also visualizes your income and expenses in graphs. ',
     url: 'https://github.com/perkzen/finazo',
     languages: 'Typescript',
     color: '#3178C6',
-    technologies: ['NextJS', 'PlanetScale', 'Tailwindcss'],
+    technologies: ['NextJS', 'PlanetScale', 'Tailwindcss', 'NextAuth', 'tRPC'],
   },
 ];
