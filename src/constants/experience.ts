@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
       'I worked as a Junior Software Engineer at Equaleyes. ' +
       'I mainly worked on the frontend side where I learnt a lot about TypeScript, React, Redux and SCSS. ' +
       'I also worked a little on the backend where I used Typescript, NestJS, Swagger and PostgreSQL. ' +
-      'My responsibilities included:  Developing new features for the frontend sometimes even whole pages and backend fixing bugs, writing REST endpoints, writing documentation.' +
+      'My responsibilities included:  Developing new features for the frontend sometimes even whole pages and backend fixing bugs, writing REST endpoints, writing documentation. ' +
       'The main things that I learnt are how to collaborate with other developers and how to communicate with other team members ' +
       'and thinking outside the box.',
     startDate: 'Nov 2021',

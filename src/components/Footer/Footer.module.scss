@@ -4,5 +4,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 8rem;
   @include typography-small;
+  @media (min-width: 768px) {
+    min-height: 2rem;
+  }
 }
