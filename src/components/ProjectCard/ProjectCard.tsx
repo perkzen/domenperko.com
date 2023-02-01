@@ -12,9 +12,11 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className={classes.Container}>
       <h1>
-        <Link href={project.url} passHref>
-          <SiGithub />
-          {project.title}
+        <Link href={project.url} legacyBehavior>
+          <a target="_blank" rel="noopener noreferrer">
+            <SiGithub />
+            {project.title}
+          </a>
         </Link>
       </h1>
       <p>{project.description}</p>
