@@ -6,6 +6,7 @@ import Technologies from '../Techonologies/Technologies';
 import Image from 'next/image';
 import image from '../../../public/pd_square.png';
 import { useInView } from 'react-intersection-observer';
+import { SiTypescript, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 
 const About: FC = () => {
   const [ref, inView] = useInView({ threshold: 0.2 });
@@ -27,8 +28,12 @@ const About: FC = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.Grid}>
-        <div ref={ref}>
-          <Image src={image} alt={'image'} width={200} height={200} priority />
+        <div ref={ref} className={classes.ImageContainer}>
+          <Image src={image} alt={'image'} width={250} height={250} priority />
+          <div>Favourite technologies</div>
+          <span>
+            <SiTypescript /> <SiNextdotjs /> <SiTailwindcss />
+          </span>
         </div>
         <motion.div initial={{ x: '200vw' }} animate={animation}>
           <motion.div initial="start" animate="end">

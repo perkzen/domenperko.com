@@ -26,13 +26,14 @@ export const experiences: Experience[] = [
     type: ExperienceType.UNI,
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Full-Stack Software Engineer',
     company: 'Equaleyes Ltd.',
     url: 'https://equaleyes.com/',
     description:
       'I worked as a Junior Software Engineer at Equaleyes. ' +
       'I mainly worked on the frontend side where I learnt a lot about TypeScript, React, Redux and SCSS. ' +
       'I also worked a little on the backend where I used Typescript, NestJS, Swagger and PostgreSQL. ' +
+      'My responsibilities included:  Developing new features for the frontend sometimes even whole pages and backend fixing bugs, writing REST endpoints, writing documentation.' +
       'The main things that I learnt are how to collaborate with other developers and how to communicate with other team members ' +
       'and thinking outside the box.',
     startDate: 'Nov 2021',
@@ -40,13 +41,14 @@ export const experiences: Experience[] = [
     type: ExperienceType.COMPANY,
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Full-Stack Software Engineer',
     company: 'nChain d.o.o.',
     url: 'https://nchain.com/',
     description:
-      "Currently working as a Junior Software Engineer at nChain. Mainly working on the backend where I'm contributing to different " +
-      'microservices. Some technologies that I daily use at my work are Typescript, Express.js, Swagger, GraphQL and PostgreSQL. ' +
-      'The most important things that I learnt so far at this position is how to write good unit tests for my code.',
+      'Currently working as a Junior Software Engineer at nChain.' +
+      ' My responsibilities range from contributing to different microservices, managing SQL migrations and developing SPA in react' +
+      'Some technologies that I daily use at my work are Typescript, React, NestJS, Express.js, Swagger, GraphQL and PostgreSQL. ' +
+      'The most important things that I learnt so far at this position are how to write good unit tests for my code and microservice architecture.',
     startDate: 'May 2022',
     endDate: 'Present',
     type: ExperienceType.COMPANY,
