@@ -18,6 +18,9 @@ import {
   SiSass,
   SiFramer,
   SiGo,
+  SiJava,
+  SiSwift,
+  SiFirebase,
   SiPostgresql,
   SiSolidity,
   SiGit,
@@ -75,6 +78,17 @@ export const technologies: ITechnology[] = [
     name: 'Framer-Motion',
   },
   { icon: <SiGo />, url: 'https://go.dev/', name: 'Go' },
+  { icon: <SiJava />, url: 'https://www.java.com/en/', name: 'Java' },
+  {
+    icon: <SiSwift />,
+    url: 'https://developer.apple.com/swift/',
+    name: 'Swift',
+  },
+  {
+    icon: <SiFirebase />,
+    url: 'https://firebase.google.com/',
+    name: 'Firebase',
+  },
   {
     icon: <SiPostgresql />,
     url: 'https://www.postgresql.org/',
