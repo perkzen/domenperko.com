@@ -3,14 +3,16 @@ import classes from './ProjectCard.module.scss';
 import { Project } from '../../constants/projects';
 import { SiGithub } from 'react-icons/si';
 import Link from 'next/link';
+import { Variants, motion } from 'framer-motion';
 
 interface ProjectCardProps {
   project: Project;
+  variants?: Variants;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ project, variants }) => {
   return (
-    <div className={classes.Container}>
+    <motion.div className={classes.Container} variants={variants}>
       <h1>
         <Link href={project.url} legacyBehavior>
           <a target="_blank" rel="noopener noreferrer">
@@ -31,7 +33,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
           </p>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
