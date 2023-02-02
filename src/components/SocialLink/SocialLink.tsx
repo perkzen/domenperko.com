@@ -24,7 +24,7 @@ const SocialLink: FC<SocialLinkProps> = ({ link }) => {
 
   return (
     <motion.div
-      whileHover={{ scale: 2, transition: { duration: 0.5 } }}
+      whileHover={{ scale: 1.5, rotate: 30, transition: { duration: 0.5 } }}
       className={classes.Container}
     >
       <a href={link}>{getIcon()}</a>

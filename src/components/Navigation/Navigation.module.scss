@@ -5,6 +5,11 @@
   flex-direction: row;
   width: 100%;
 
+  .Logo {
+    z-index: 100;
+    padding-top: 1rem;
+  }
+
   .Socials {
     display: flex;
     flex-direction: row;
