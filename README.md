@@ -16,6 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 ## Important packages
-- NextJS
-- FramerMotion
-- Sass
+- NextJS: `13.1.4`
+- FramerMotion: `6.2.6`
+- Sass: `1.49.7`
+
+
+  
