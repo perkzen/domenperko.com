@@ -29,9 +29,18 @@
     }
 
     > span {
-      @include d-flex-row;
-      gap: 1rem;
-      @include title;
+      z-index: 100;
+      > a {
+        @include d-flex-row;
+        align-items: center;
+        margin-left: 1rem;
+        gap: 0.5rem;
+        @include typography-2;
+
+        @media (min-width: 768px) {
+          margin-left: 0;
+        }
+      }
     }
   }
 

@@ -44,7 +44,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Redux', 'Tailwindcss'],
   },
   {
-    title: 'Endava workspace reservation',
+    title: 'Reservation app',
     description:
       'This is a workspace reservation web application for company Endava. ' +
       'Where you can dynamically choose your workspace or reserve it for a few days in advance. ',

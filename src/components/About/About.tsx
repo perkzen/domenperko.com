@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import classes from './About.module.scss';
 import { motion, useAnimation } from 'framer-motion';
 import { floatTransition, floatVariant } from '../../animations/float';
@@ -6,11 +6,25 @@ import Technologies from '../Techonologies/Technologies';
 import Image from 'next/image';
 import image from '../../../public/pd_square.png';
 import { useInView } from 'react-intersection-observer';
-import { SiTypescript, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { SiSpotify } from 'react-icons/si';
+import Link from 'next/link';
+
+interface NowPlayingResponse {
+  album: string;
+  albumImageUrl: string;
+  artist: string;
+  isPlaying: boolean;
+  songUrl: string;
+  title: string;
+}
 
 const About: FC = () => {
   const [ref, inView] = useInView({ threshold: 0.2 });
   const animation = useAnimation();
+  const [nowPlaying, setNowPlaying] = useState<{ url: string; song: string }>({
+    url: '',
+    song: 'Nothing',
+  });
 
   useEffect(() => {
     if (inView) {
@@ -25,14 +39,28 @@ const About: FC = () => {
     }
   }, [animation, inView]);
 
+  useEffect(() => {
+    fetch('/api/now-playing').then(async (res) => {
+      const { artist, title, songUrl, isPlaying }: NowPlayingResponse =
+        await res.json();
+      const url = isPlaying ? songUrl : '';
+      const song = isPlaying ? `${artist} - ${title}` : 'Nothing';
+      setNowPlaying({ url, song });
+    });
+  }, []);
+
   return (
     <div className={classes.Container}>
       <div className={classes.Grid}>
         <div ref={ref} className={classes.ImageContainer}>
           <Image src={image} alt={'image'} width={250} height={250} priority />
-          <div>Favourite technologies</div>
+          <div>Currently playing</div>
           <span>
-            <SiTypescript /> <SiNextdotjs /> <SiTailwindcss />
+            <Link href={nowPlaying.url} legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
+                <SiSpotify color={'1ED760'} /> {nowPlaying.song}
+              </a>
+            </Link>
           </span>
         </div>
         <motion.div initial={{ x: '200vw' }} animate={animation}>
