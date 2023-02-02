@@ -22,7 +22,7 @@ const About: FC = () => {
   const [ref, inView] = useInView({ threshold: 0.2 });
   const animation = useAnimation();
   const [nowPlaying, setNowPlaying] = useState<{ url: string; song: string }>({
-    url: '',
+    url: '#',
     song: 'Nothing',
   });
 
@@ -43,7 +43,7 @@ const About: FC = () => {
     fetch('/api/now-playing').then(async (res) => {
       const { artist, title, songUrl, isPlaying }: NowPlayingResponse =
         await res.json();
-      const url = isPlaying ? songUrl : '';
+      const url = isPlaying ? songUrl : '#';
       const song = isPlaying ? `${artist} - ${title}` : 'Nothing';
       setNowPlaying({ url, song });
     });
