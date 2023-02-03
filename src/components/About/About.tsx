@@ -21,9 +21,14 @@ interface NowPlayingResponse {
 const About: FC = () => {
   const [ref, inView] = useInView({ threshold: 0.2 });
   const animation = useAnimation();
-  const [nowPlaying, setNowPlaying] = useState<{ url: string; song: string }>({
+  const [nowPlaying, setNowPlaying] = useState<{
+    url: string;
+    song: string;
+    isPlaying: boolean;
+  }>({
     url: '#',
     song: 'Nothing',
+    isPlaying: false,
   });
 
   useEffect(() => {
@@ -45,7 +50,7 @@ const About: FC = () => {
         await res.json();
       const url = isPlaying ? songUrl : '#';
       const song = isPlaying ? `${artist} - ${title}` : 'Nothing';
-      setNowPlaying({ url, song });
+      setNowPlaying({ url, song, isPlaying });
     });
   }, []);
 
@@ -56,11 +61,21 @@ const About: FC = () => {
           <Image src={image} alt={'image'} width={250} height={250} priority />
           <div>Currently playing</div>
           <span>
-            <Link href={nowPlaying.url} legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">
+            {nowPlaying.isPlaying ? (
+              <Link
+                className={classes.Spotify}
+                href={nowPlaying.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                passHref
+              >
                 <SiSpotify color={'1ED760'} /> {nowPlaying.song}
-              </a>
-            </Link>
+              </Link>
+            ) : (
+              <div className={classes.Spotify}>
+                <SiSpotify color={'1ED760'} /> {nowPlaying.song}
+              </div>
+            )}
           </span>
         </div>
         <motion.div initial={{ x: '200vw' }} animate={animation}>
