@@ -23,6 +23,7 @@
     @include d-flex-a-center-j-center;
     flex-direction: column;
     gap: 1.5rem;
+    z-index: 100;
 
     > div {
       @include typography-1;
@@ -30,12 +31,23 @@
 
     > span {
       z-index: 100;
+      @include d-flex-a-center-j-center;
+      width: 100%;
+
       > .Spotify {
-        @include d-flex-row;
-        align-items: center;
-        margin-left: 1rem;
+        //@include d-flex-row;
+        //align-items: center;
+        //word-break: break-word;
         gap: 0.5rem;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        place-items: center;
+        margin-left: 1rem;
         @include typography-2;
+
+        .SpotifyLogo {
+          @include d-flex-a-center-j-center;
+        }
 
         @media (min-width: 768px) {
           margin-left: 0;
@@ -45,7 +57,16 @@
   }
 
   p {
-    @include paragraph;
+    z-index: 100;
+    @include typography-2;
+
+    > span {
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-underline-offset: 4px;
+      text-decoration-color: $accent-color-2;
+    }
   }
 
   h1 {

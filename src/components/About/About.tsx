@@ -27,7 +27,7 @@ const About: FC = () => {
     isPlaying: boolean;
   }>({
     url: '#',
-    song: 'Nothing',
+    song: 'Domen is not listening to Spotify at the moment',
     isPlaying: false,
   });
 
@@ -49,7 +49,9 @@ const About: FC = () => {
       const { artist, title, songUrl, isPlaying }: NowPlayingResponse =
         await res.json();
       const url = isPlaying ? songUrl : '#';
-      const song = isPlaying ? `${artist} - ${title}` : 'Nothing';
+      const song = isPlaying
+        ? `${artist} - ${title}`
+        : 'Domen is not listening to Spotify at the moment';
       setNowPlaying({ url, song, isPlaying });
     });
   }, []);
@@ -59,7 +61,6 @@ const About: FC = () => {
       <div className={classes.Grid}>
         <div ref={ref} className={classes.ImageContainer}>
           <Image src={image} alt={'image'} width={250} height={250} priority />
-          <div>Currently playing</div>
           <span>
             {nowPlaying.isPlaying ? (
               <Link
@@ -69,11 +70,14 @@ const About: FC = () => {
                 rel="noopener noreferrer"
                 passHref
               >
-                <SiSpotify color={'1ED760'} /> {nowPlaying.song}
+                <div className={classes.SpotifyLogo}>
+                  <SiSpotify color={'1ED760'} size={24} />
+                </div>
+                <div> {nowPlaying.song}</div>
               </Link>
             ) : (
               <div className={classes.Spotify}>
-                <SiSpotify color={'1ED760'} /> {nowPlaying.song}
+                <SiSpotify color={'1ED760'} size={24} /> {nowPlaying.song}
               </div>
             )}
           </span>
@@ -85,12 +89,28 @@ const About: FC = () => {
             </motion.h1>
             <p>
               Hi, there I&apos;m Domen. I&apos;m a software developer from
-              Slovenia. I started programming in 2020, and since then I have
-              built a lot of interesting projects, by building them I have added
-              a lot of new skills to my repertoire. I have been obsessed with
-              the idea of using software to solve practical problems. Software
-              engineering is a never ending puzzle that I am passionately
-              engaged in solving.
+              Slovenia with a passion for creating innovative and practical
+              projects. My expertise lies in <span>Full Stack Development</span>{' '}
+              and my favorite programming language is <span>Typescript</span>.
+            </p>
+
+            <p>
+              My journey with coding began in 2020 and I have been constantly
+              learning and growing ever since. I&apos;m fond of technologies
+              like <span>Typescript, Next.js and TailwindCSS </span>, which I
+              believe make development a lot easier and fun. I take pride in
+              being able to learn and apply new technologies in a quick and
+              effective manner. My goal is to continue to expand my knowledge
+              and experience in the industry while delivering high-quality work
+              that meets the needs of my clients.
+            </p>
+
+            <p>
+              When I&apos;m not coding, I enjoy playing video games or working
+              out at the gym. I believe that a healthy balance between work and
+              leisure is essential for maintaining productivity and creativity.
+              I&apos;m always on the lookout for new challenges and
+              opportunities to learn and grow as a software developer.
             </p>
           </motion.div>
         </motion.div>
