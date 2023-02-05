@@ -21,4 +21,8 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 - Sass: `1.49.7`
 
 
-  
+## Future improvements
+- [ ] add Blog page
+- [ ] add FAQ page
+- [ ] add GuestBook page
+- [ ] add Project detail page

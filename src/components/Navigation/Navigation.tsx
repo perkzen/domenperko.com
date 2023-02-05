@@ -12,7 +12,7 @@ const Navigation: FC = () => {
     <div className={classes.Container}>
       <motion.div
         className={classes.Logo}
-        whileHover={{ scale: 1.5, rotate: 30, transition: { duration: 0.5 } }}
+        whileHover={{ rotate: 30, transition: { duration: 0.5 } }}
         initial={{ scale: 0 }}
         animate={{ rotate: 180, scale: 1 }}
         transition={{
