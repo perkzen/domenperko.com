@@ -2,6 +2,7 @@ import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script';
+import React from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,12 +24,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta content="Domen Perko | Software Developer" property="og:title" />
         <meta
-          content=" Hi, there I'm Domen. I'm a software developer from Slovenia.
-          I've started programming in 2020, since then I've build a
-          lot of interesting project, by building them I've added a lot of
-          new skills to my repertoire. The best thing I find amazing in software
-          developing is that you can make your life much easier by automating
-          boring tasks that you normally don't want to do."
+          content="Hi, there I'm Domen. I'm a software developer from
+              Slovenia with a passion for creating innovative and practical
+              projects. My expertise lies in Full Stack Development
+              and my favorite programming language is Typescript. I take pride in
+              being able to learn and apply new technologies in a quick and
+              effective manner. My goal is to continue to expand my knowledge
+              and experience in the industry while delivering high-quality work
+              that meets the needs of my clients."
           property="og:description"
         />
         <meta property="og:image" content="/pd_square.png" />
