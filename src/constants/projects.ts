@@ -54,10 +54,10 @@ export const projects: Project[] = [
     technologies: ['React', 'Redux', 'Tailwindcss', 'NestJS', 'MongoDB'],
   },
   {
-    title: 'Finazo',
+    title: 'Finanzo',
     description:
-      'Finazo is a web application where you can manage your finances. Finanzo also visualizes your income and expenses in graphs. ',
-    url: 'https://github.com/perkzen/finazo',
+      'Finanzo is a web application where you can manage your finances. Finanzo also visualizes your income and expenses in graphs. ',
+    url: 'https://github.com/perkzen/finanzo',
     languages: 'Typescript',
     color: '#3178C6',
     technologies: ['NextJS', 'PlanetScale', 'Tailwindcss', 'NextAuth', 'tRPC'],
