@@ -11,7 +11,7 @@ import {
 } from '../../animations/wave';
 
 const Introduction: FC = () => {
-  const text = stringToArray('Hello_world!');
+  const text = stringToArray('Portfolio');
 
   return (
     <div className={classes.Container}>
