@@ -46,7 +46,7 @@ export const experiences: Experience[] = [
     url: 'https://nchain.com/',
     description:
       'Currently working as a Junior Software Engineer at nChain.' +
-      ' My responsibilities range from contributing to different microservices and developing SPA in React.' +
+      ' My responsibilities range from contributing to different microservices and developing SPA in React. ' +
       'Some technologies that I daily use at my work are Typescript, React, NestJS, Express.js, Swagger, GraphQL and PostgreSQL. ' +
       'The most important things that I learnt so far at this position are how to write good unit tests for my code and microservice architecture.',
     startDate: 'May 2022',
