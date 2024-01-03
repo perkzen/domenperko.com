@@ -8,10 +8,10 @@ export interface Experience {
   title: string;
   company: string;
   url: string;
-  description: string;
   startDate: string;
   endDate: string;
   type: ExperienceType;
+  bulletPoints: string[];
 }
 
 export const experiences: Experience[] = [
@@ -19,8 +19,9 @@ export const experiences: Experience[] = [
     title: 'Student',
     company: 'University of Maribor',
     url: 'https://feri.um.si/',
-    description:
+    bulletPoints: [
       'Studying Informatics and communication technologies at the Faculty of Electrical Engineering and Computer Science, University of Maribor.',
+    ],
     startDate: 'Oct 2020',
     endDate: 'Present',
     type: ExperienceType.UNI,
@@ -29,13 +30,13 @@ export const experiences: Experience[] = [
     title: 'Full-Stack Software Engineer',
     company: 'Equaleyes Ltd.',
     url: 'https://equaleyes.com/',
-    description:
-      'I worked as a Junior Software Engineer at Equaleyes. ' +
-      'I mainly worked on the frontend side where I learnt a lot about TypeScript, React, Redux and SCSS. ' +
-      'I also worked a little on the backend where I used Typescript, NestJS, Swagger and PostgreSQL. ' +
-      'My responsibilities included:  Developing new features for the frontend sometimes even whole pages and on the backend I was fixing bugs, writing REST endpoints, writing documentation. ' +
-      'The main things that I learnt are how to collaborate with other developers and how to communicate with other team members ' +
-      'and thinking outside the box.',
+    bulletPoints: [
+      'Translated Figma designs into UI code.',
+      'Collaborated effectively with a team of developers, fostering communication, and ensuring efficient ' +
+        'project delivery.',
+      'Demonstrated problem-solving skills and the ability to think creatively to meet ' +
+        'project requirements.',
+    ],
     startDate: 'Nov 2021',
     endDate: 'May 2022',
     type: ExperienceType.COMPANY,
@@ -44,11 +45,12 @@ export const experiences: Experience[] = [
     title: 'Full-Stack Software Engineer',
     company: 'nChain d.o.o.',
     url: 'https://nchain.com/',
-    description:
-      'Currently working as a Junior Software Engineer at nChain.' +
-      ' My responsibilities range from contributing to different microservices and developing SPA in React. ' +
-      'Some technologies that I daily use at my work are Typescript, React, NestJS, Express.js, Swagger, GraphQL and PostgreSQL. ' +
-      'The most important things that I learnt so far at this position are how to write good unit tests for my code and microservice architecture.',
+    bulletPoints: [
+      'Demonstrated proficiency in writing comprehensive unit tests for ensuring code quality.',
+      'Gained valuable experience and expertise in microservice architecture.',
+      'Developed scalable and maintainable codebase, following best practices and industry standards to ' +
+        'ensure long-term code quality and ease of maintenance.',
+    ],
     startDate: 'May 2022',
     endDate: 'Present',
     type: ExperienceType.COMPANY,

@@ -39,6 +39,16 @@
   .Description {
     .Time {
       font-weight: bold;
+      margin: 0.5rem 0;
+    }
+
+    ul,
+    li {
+      list-style: disc;
+    }
+
+    ul {
+      padding-left: 1rem;
     }
 
     @include typography-2;
