@@ -27,7 +27,11 @@ const TimelineItem: FC<TimelineItemProps> = ({ experience }) => {
         <p className={classes.Time}>
           {experience.startDate} - {experience.endDate}
         </p>
-        <p>{experience.description}</p>
+        <ul>
+          {experience.bulletPoints.map((bulletPoint, index) => (
+            <li key={index}>{bulletPoint}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
