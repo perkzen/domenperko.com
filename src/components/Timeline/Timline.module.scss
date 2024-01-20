@@ -23,4 +23,9 @@
   li {
     list-style: none;
   }
+
+  .list {
+    @include d-flex-col;
+    gap: 2rem;
+  }
 }

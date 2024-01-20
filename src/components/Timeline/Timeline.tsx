@@ -23,6 +23,7 @@ export const Timeline: FC = () => {
         Timeline
       </motion.h1>
       <motion.ul
+        className={classes.list}
         variants={parentVariants}
         initial={'hidden'}
         animate={animation}
