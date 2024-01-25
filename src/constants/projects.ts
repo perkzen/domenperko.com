@@ -18,7 +18,7 @@ export const projects: Project[] = [
       'PM10 Pollution Prediction is a project where I tried to predict PM10' +
       ' particles in the air using recurrent neural networks and multivariate time series.' +
       ' After training the model, I exported it and made it accessible by exposing it through an API.',
-    url: 'https://github.com/perkzen/messenger',
+    url: 'https://github.com/perkzen/development-of-intelligent-solutions-with-machine-learning/tree/master/project',
     languages: 'Python',
     color: '#e5d20d',
     technologies: [
@@ -51,12 +51,22 @@ export const projects: Project[] = [
     technologies: ['React', 'Redux', 'Tailwindcss', 'NestJS', 'MongoDB'],
   },
   {
-    title: 'Finanzo',
+    title: 'CompanyHub',
     description:
-      'Finanzo is a web application where you can manage your finances. Finanzo also visualizes your income and expenses in graphs. ',
-    url: 'https://github.com/perkzen/finanzo',
+      'This project aims to develop a web application tailored for IT companies ' +
+      'and beyond, providing an intuitive and efficient solution for task management and execution within the organization.' +
+      ' The application offers a range of' +
+      ' features that enhance project coordination and facilitate efficient task handling. ',
+    url: 'https://github.com/techbuilddotgg/company-hub',
     languages: 'Typescript',
     color: '#3178C6',
-    technologies: ['NextJS', 'PlanetScale', 'Tailwindcss', 'NextAuth', 'tRPC'],
+    technologies: [
+      'NextJS',
+      'PlanetScale',
+      'Tailwindcss',
+      'Clerk',
+      'tRPC',
+      'OpenAI',
+    ],
   },
 ];
