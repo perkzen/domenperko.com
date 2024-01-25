@@ -18,7 +18,7 @@ export const projects: Project[] = [
       'PM10 Pollution Prediction is a project where I tried to predict PM10' +
       ' particles in the air using recurrent neural networks and multivariate time series.' +
       ' After training the model, I exported it and made it accessible by exposing it through an API.',
-    url: 'https://github.com/perkzen/messenger',
+    url: 'https://github.com/perkzen/development-of-intelligent-solutions-with-machine-learning/tree/master/project',
     languages: 'Python',
     color: '#e5d20d',
     technologies: [
