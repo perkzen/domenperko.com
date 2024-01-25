@@ -20,14 +20,15 @@ export const experiences: Experience[] = [
     company: 'University of Maribor',
     url: 'https://feri.um.si/',
     bulletPoints: [
-      'Studying Informatics and communication technologies at the Faculty of Electrical Engineering and Computer Science, University of Maribor.',
+      'Graduated as Bachelor of Informatics and communication technologies at the Faculty of Electrical Engineering and Computer Science, University of Maribor.',
+      'Currently enrolled in the Master of Informatics and Data Technologies at the Faculty of Electrical Engineering and Computer Science, University of Maribor.',
     ],
     startDate: 'Oct 2020',
     endDate: 'Present',
     type: ExperienceType.UNI,
   },
   {
-    title: 'Full-Stack Software Engineer',
+    title: 'Frontend Software Engineer',
     company: 'Equaleyes Ltd.',
     url: 'https://equaleyes.com/',
     bulletPoints: [
@@ -50,6 +51,8 @@ export const experiences: Experience[] = [
       'Gained valuable experience and expertise in microservice architecture.',
       'Developed scalable and maintainable codebase, following best practices and industry standards to ' +
         'ensure long-term code quality and ease of maintenance.',
+      'Acted as the sole frontend developer on a crucial MVP project, overseeing the entire development lifecycle and contributing to its successful deployment to production',
+      'Stepped in to handle crucial aspects of projects during the absence of a Senior Software Engineer, showcasing adaptability and leadership in ensuring project continuity.',
     ],
     startDate: 'May 2022',
     endDate: 'Present',

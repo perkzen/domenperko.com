@@ -13,38 +13,35 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Chat App',
+    title: 'PM10 Pollution Prediction',
     description:
-      'This is a basic messenger web chat application. ' +
-      'Where you can send private messages to online users. ' +
-      'For this application is used sockets for sending messages, ' +
-      'express for backend server with mongodb for saving data and ' +
-      'on the frontend I used React with Next.js for search engine optimization.',
+      'PM10 Pollution Prediction is a project where I tried to predict PM10' +
+      ' particles in the air using recurrent neural networks and multivariate time series.' +
+      ' After training the model, I exported it and made it accessible by exposing it through an API.',
     url: 'https://github.com/perkzen/messenger',
-    languages: 'Typescript',
-    color: '#3178C6',
+    languages: 'Python',
+    color: '#e5d20d',
     technologies: [
-      'Tailwindcss',
-      'NextJS',
-      'Redux',
-      'Express',
-      'MongoDB',
-      'Socket.io',
+      'Tensorflow',
+      'Pandas',
+      'Numpy',
+      'Matplotlib',
+      'Scikit-learn',
     ],
   },
   {
-    title: 'Computer Shop',
+    title: 'GO Blockchain',
     description:
-      'This is an online store where you can buy computers and computer parts. ' +
-      'Admin can add and remove products from the shop. This shop has also many features few of them are filtering items and adding them to the shopping cart. ' +
-      'When you go to the shopping cart and click on checkout all purchases will be saved in a table that can be accessed by the admin.',
-    url: 'https://github.com/perkzen/computer_store',
-    languages: 'Typescript',
-    color: '#3178C6',
-    technologies: ['React', 'Redux', 'Tailwindcss'],
+      'GO Blockchain is a basic implementation of a blockchain using the Go programming language. ' +
+      'The project aims to demonstrate the fundamental ' +
+      'concepts behind blockchain technology and how they can be implemented in a decentralized and secure manner.',
+    url: 'https://github.com/perkzen/blockchain',
+    languages: 'Go',
+    color: '#00ADD8',
+    technologies: ['Crypto', 'P2P', 'WebSockets'],
   },
   {
-    title: 'Reservation app',
+    title: 'Endava Workspaces App',
     description:
       'This is a workspace reservation web application for company Endava. ' +
       'Where you can dynamically choose your workspace or reserve it for a few days in advance. ',
